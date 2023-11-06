@@ -21,20 +21,20 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>{Global.product}</title>
+        <title>{Global.companyName}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Notice id="subscribed">Thank you for subscribing</Notice>
-      <Header id="top" title={Global.product}/>
+      <Header id="top" title={Global.companyName} />
 
       <main>
         <Hero
-          title="Clear headline that explains your product’s benefit"
-          subtitle="Explain your unique solution, how it solves your customer's problem."
+          title="A validator service combining robust uptime, scalability, and energy-efficiency."
+          subtitle="Empower your blockchain infrastructure with SBMI"
           illustration=""
           subscribePlaceholder="you@email.com"
-          subscribeAction="When is it ready?"
+          subscribeAction="Interested"
         />
 
         <Benefits
@@ -42,9 +42,9 @@ export default function Home() {
           title="Headline that describes how your product solves the problem"
           subtitle="Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers."
           benefits={[
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
-            {illustration:'', title:'Main benefit of your product', text:'Brief explanation of why and how this benefit will help your customers'},
+            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
+            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
+            { illustration: '', title: 'Main benefit of your product', text: 'Brief explanation of why and how this benefit will help your customers' },
           ]}
         />
 
@@ -53,16 +53,16 @@ export default function Home() {
           subtitle="This is an in-betwen CTA for visitors that already got convinced."
           illustration=""
           action="When is it ready?"
-          onActionClick={() => window.scrollTo({top:99999, behavior:'smooth'})}
+          onActionClick={() => window.scrollTo({ top: 99999, behavior: 'smooth' })}
         />
 
         <Highlights
           title="Highlights of your product"
           subtitle="Explain why your solution deserves attention"
           highlights={[
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
-            {illustration:'', title:'Now go deeper into what your product offers. Word it as benefits, not as features', text:'“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.'},
+            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
+            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
+            { illustration: '', title: 'Now go deeper into what your product offers. Word it as benefits, not as features', text: '“Save your favorite links” is a feature. “Never lose your favorite websites again” is a benefit. Users don’t care about your product, they only care about what’s in it for them.' },
           ]}
         />
 
@@ -71,12 +71,12 @@ export default function Home() {
           title="But wait, there is more"
           subtitle="Describe the full extent of your product"
           features={[
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
-            {illustration:'', title:'Product feature', text:'Brief explanation of why and how this feature will help your customers'},
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
+            { illustration: '', title: 'Product feature', text: 'Brief explanation of why and how this feature will help your customers' },
           ]}
         />
 
@@ -90,7 +90,7 @@ export default function Home() {
       </main>
 
       <Footer
-        title={Global.product}
+        title={Global.companyName}
       />
     </div>
   )
